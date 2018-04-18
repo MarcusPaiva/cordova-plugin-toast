@@ -23,6 +23,6 @@
             </feature>
         </config-file>
 
-<source-file src="src/android/com/toast/ToastLasf.java" target-dir="src/com/br/plugins/toast/toast"/>
+<source-file src="src/android/com/toast/Toast.java" target-dir="src/com/br/plugins/toast/toast"/>
     </platform>
 </plugin>
