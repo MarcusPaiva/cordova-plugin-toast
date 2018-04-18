@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONArray;
 import org.apache.cordova.CallbackContext;
 import android.content.Context;
-//import android.widget.Toast;
+import android.widget.Toast;
 
 public class Toast extends CordovaPlugin{
 	private static final String TAG = "Toast";
@@ -41,11 +41,11 @@ public class Toast extends CordovaPlugin{
 	
 	public void toast(String frase){
 		Context context=this.cordova.getActivity().getApplicationContext();
-        String texto = frase;
-        int duracao = Toast.LENGTH_SHORT;
+        	String texto = frase;
+        	int duracao = Toast.LENGTH_SHORT;
 		//Toast toast = Toast.makeText(context, "Ola Mundo!",duracao);
-        Toast toast = Toast.makeText(context, texto,duracao);
-        toast.show();
+        	Toast toast = Toast.makeText(context, texto, duracao);
+        	toast.show();
 	}
 	
 }
