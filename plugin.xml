@@ -11,18 +11,18 @@
 	</engines>
 	<js-module src="www/plugin.js" name="Toast">
 		<runs/>
-        <clobbers target="Toas" />
+        <clobbers target="Toast" />
     </js-module>
 
 <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Toast" >
-                <param name="android-package" value="com.lasf.Toast"/>
+                <param name="android-package" value="com.toast.ToastCordova"/>
 				
             </feature>
         </config-file>
 
-<source-file src="src/android/com/toast/Toast.java" target-dir="src/com/br/plugins/toast/toast"/>
+<source-file src="src/android/com/toast/ToastCordova.java" target-dir="src/com/br/plugins/toast/toastcordova"/>
     </platform>
 </plugin>
