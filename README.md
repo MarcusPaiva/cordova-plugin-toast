@@ -1,4 +1,10 @@
-Cordova Plugin Template
+Cordova Plugin Toast
 ======
 
-This is a simple starting point for building a Cordova plugin on iOS and Android.
+Only Android
+
+install:
+
+cordova plugin add https://github.com/MarcusPaiva/cordova-plugin-toast
+
+
