@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-toast"
+    version="1.0.0">
+    <name>ToastLasf</name>
+    <description>Plugin que gera o toast</description>
+    <keywords>cordova,ToastLasf, Toast</keywords>
+	<engines>
+      <engine name="cordova" version=">=3.0.0"/>
+	</engines>
+	<js-module src="www/plugin.js" name="Toast">
+		<runs/>
+        <clobbers target="Toas" />
+    </js-module>
+
+<!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Toast" >
+                <param name="android-package" value="com.lasf.Toast"/>
+				
+            </feature>
+        </config-file>
+
+<source-file src="src/android/com/toast/ToastLasf.java" target-dir="src/com/br/plugins/toast/toast"/>
+    </platform>
+</plugin>

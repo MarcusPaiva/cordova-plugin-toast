@@ -1,0 +1,11 @@
+{
+  "name": "cordova-plugin-toast",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova-plugin-toast",
+    "platforms": [
+      "android"
+    ]
+  },
+  "description": "Create a toast"
+}
