@@ -1,17 +1,35 @@
-Cordova Plugin Toast
-======
+# cordova-plugin-toast
 
-Only Android
+Ele server para exibir mensagens rápidas e temporais no rodapé do aparelho
 
-install:
+Somente Android
 
-cordova plugin add https://github.com/MarcusPaiva/cordova-plugin-toast
+### Instalação via linha de comando
 
-Sintaxe do javascript:
+ - cordova plugin add https://github.com/MarcusPaiva/cordova-plugin-toast
+
+### Especificando no arquivo no arquivo "plugins.properties" do NetBeans:
+
+ - cordova-plugin-toast=https://github.com/MarcusPaiva/cordova-plugin-toast
+
+## Sintaxe do javascript no projeto:
+```
 <script>
   document.addEventListener("deviceready", onDeviceReady, false);
   function onDeviceReady() {
-     //TODO: inserir o plugin aqui
      window.Toast.toast("Ola mundo!");
   }
 </script>
+```
+
+### Funcionalidade futuras
+
+ - Funcionar no IOS
+ - Adicionar parâmetro de temporizador do toast ( atualmente apenas ele funciona com a velociade LENGTH_SHORT, pretende-se adicionar LENGTH_SHORT)
+ - Adicionar parâmetro de controle de direção na tela por padrão ele fica no canto inferior e centralizado
+
+## Notas de versão
+
+### Versão 1.0
+
+ - Exibe função apenas um Toast rápido
