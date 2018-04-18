@@ -40,7 +40,7 @@ public class Toast extends CordovaPlugin{
 	}
 	
 	public void toast(String frase){
-		Context context=this.cordova.getActivity().getApplicationContext(); ;
+		Context context=this.cordova.getActivity().getApplicationContext();
         String texto = frase;
         int duracao = Toast.LENGTH_SHORT;
 		//Toast toast = Toast.makeText(context, "Ola Mundo!",duracao);
