@@ -1,4 +1,4 @@
-//package com.toast; //Deverá o package do diretório que será copiado
+package com.toast; //Deverá o package do diretório que será copiado
 
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
@@ -11,7 +11,7 @@ import org.json.JSONException;
 import org.json.JSONArray;
 import org.apache.cordova.CallbackContext;
 import android.content.Context;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 public class Toast extends CordovaPlugin{
 	private static final String TAG = "Toast";
