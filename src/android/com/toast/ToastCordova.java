@@ -13,7 +13,7 @@ import org.apache.cordova.CallbackContext;
 import android.content.Context;
 import android.widget.Toast;
 
-public class Toast extends CordovaPlugin{
+public class ToastCordova extends CordovaPlugin{
 	private static final String TAG = "Toast";
 	
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
