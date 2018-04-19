@@ -32,4 +32,4 @@ Somente Android
 
 ### Versão 1.0
 
- - Exibe função apenas um Toast rápido
+ - Função de exibir apenas um Toast rápido
