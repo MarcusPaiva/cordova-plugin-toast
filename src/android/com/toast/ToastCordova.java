@@ -1,4 +1,4 @@
-package com.toast; //Deverá o package do diretório que será copiado
+package com.toast;
 
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
