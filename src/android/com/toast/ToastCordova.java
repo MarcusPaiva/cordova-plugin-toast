@@ -15,20 +15,15 @@ import android.widget.Toast;
 
 public class ToastCordova extends CordovaPlugin{
 	private static final String TAG = "Toast";
-	
 	public void initialize(CordovaInterface cordova, CordovaWebView webView) {
 		super.initialize(cordova, webView);
-
-		//Log.d(TAG, "Initializing MyCordovaPlugin");
 	}
 
-	
+	//Function waiting Cordova JS command
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext){
 		if(action.equals("toast")){
 			try{
-				//JSONObject fraseJSON = args.getJSONObject(0);
-				//String frase = fraseJSON.getString("frase");
 				String frase = args.getString(0);
 				toast(frase);
 			}
@@ -38,12 +33,11 @@ public class ToastCordova extends CordovaPlugin{
 		}
 		return true;
 	}
-	
+	//The toast
 	public void toast(String frase){
 		Context context=this.cordova.getActivity().getApplicationContext();
         	String texto = frase;
         	int duracao = Toast.LENGTH_SHORT;
-		//Toast toast = Toast.makeText(context, "Ola Mundo!",duracao);
         	Toast toast = Toast.makeText(context, texto, duracao);
         	toast.show();
 	}
